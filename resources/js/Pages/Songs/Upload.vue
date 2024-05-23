@@ -1,24 +1,25 @@
 <template>
-    <div class="song-upload">
+    <Head title="Upload Song" />
+    <div class="song-upload max-w-[1000px] mt-8 mx-auto sm:px-6 lg:px-8 space-y-6 text-white">
         <h2 class="text-2xl font-bold mb-4">Upload Song</h2>
         <form @submit.prevent="uploadSong">
             <div class="mb-4">
-                <label for="title" class="block text-gray-700 font-bold mb-2">Title:</label>
+                <label for="title" class="block font-bold mb-2">Title:</label>
                 <input type="text" id="title" v-model="song.title"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
             <div class="mb-4">
-                <label for="artist" class="block text-gray-700 font-bold mb-2">Artist:</label>
+                <label for="artist" class="block font-bold mb-2">Artist:</label>
                 <input type="text" id="artist" v-model="song.artist"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
             <div class="mb-4">
-                <label for="duration" class="block text-gray-700 font-bold mb-2">Duration:</label>
+                <label for="duration" class="block font-bold mb-2">Duration:</label>
                 <input type="text" id="duration" v-model="song.duration"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
             <div class="mb-4">
-                <label for="category" class="block text-gray-700 font-bold mb-2">Category:</label>
+                <label for="category" class="block font-bold mb-2">Category:</label>
                 <select id="category" v-model="song.category_id"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="">Select a category</option>
@@ -27,12 +28,12 @@
                 </select>
             </div>
             <div class="mb-4">
-                <label for="picture" class="block text-gray-700 font-bold mb-2">Picture:</label>
+                <label for="picture" class="block font-bold mb-2">Picture:</label>
                 <input type="file" id="picture" ref="pictureFile"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
             <div class="mb-4">
-                <label for="audio" class="block text-gray-700 font-bold mb-2">Audio File:</label>
+                <label for="audio" class="block font-bold mb-2">Audio File:</label>
                 <input type="file" id="audio" ref="audioFile"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>

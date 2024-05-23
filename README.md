@@ -54,5 +54,3 @@ doing some magic behind the scenes.
 # How to connect to mysql
 - cd {Music-Player-Root-Folder}
 - ./vendor/bin/sail mysql
-
-# Cache
